@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e3f3fd;
+}
+
+.chatbot {
+    max-width: 420px;
+    /* min-height: 100%; */
+    /* height: 450px; */
+    margin: 40px auto;
+
+}
+.title {
+    text-align: center;
+    background-color: #6528F7;
+    color: #fff;
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.chatbox {
+    list-style: none;
+    background-color: #fff;
+    height: 450px;
+    /* height: 100%; */
+    padding: 10px;
+    overflow-y: auto;
+}
+.incoming {
+    width: fit-content;
+    background-color: #EDE4FF;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.chatbox .outgoing {
+    border-radius: 15px 15px 0px 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.chatbox .outgoing p {
+    color: #fff;
+    font-size: 15px;
+    border-radius: 15px 15px 0px 15px;
+    padding: 10px;
+    background-color: #A076F9;
+}
+
+.chat-input {
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc ;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;   
+}
+.chat-input textarea {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+}
+.chat-input span {
+    align-self: flex-end;
+    color: #6528F7;
+    height: 40px;
+    line-height: 35px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.chat-input textarea:valid ~ span {
+    visibility: visible;
+}
+@media(max-width: 490px) {
+    .chatbot{
+        /* right: 0;
+        bottom: 0; */
+        bottom: 0;
+        border-radius: 0;
+        margin: 0;
+        /* height: 100%;    
+        width: 100%; */
+    }
+    .chatbot .title {
+        border-radius: 0;
+    }
+    .chat-input {
+        border-radius: 0;
+    }
+    .chatbox {
+        height: 600px;
+    }
+}   
+
